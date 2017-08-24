@@ -1,0 +1,10 @@
+.jumbotron{
+  text-align: center;
+  font-style: italic;
+  background-image: url("images/riddler_banner.webp");
+  background-repeat: no-repeat;
+}
+.score{
+display: none;
+float: right;
+}
