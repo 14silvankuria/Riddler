@@ -4,7 +4,29 @@
   background-image: url("images/riddler_banner.webp");
   background-repeat: no-repeat;
 }
-.score{
+#firstLevelScore, #scoreSheet{
 display: none;
 float: right;
+}
+#scoreSheet{
+  font-size: 13px;
+}
+#aboutLevel1{
+  text-align: center;
+  text-decoration: underline;
+}
+.about{
+  text-align: center;
+}
+.levelAbout{
+  font-weight: bold;
+}
+.col-sm-4{
+  float: left;
+  padding: auto;
+  text-align: center;
+  display: none;
+}
+.col-sm-4{
+  height: 50px;
 }
