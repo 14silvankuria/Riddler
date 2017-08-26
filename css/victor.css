@@ -27,6 +27,9 @@ float: right;
   text-align: center;
   display: none;
 }
-.col-sm-4{
-  height: 50px;
+.col-md-8{
+  border-right: 1px black solid;
+}
+#gameForm{
+  padding-top: 100px;
 }
