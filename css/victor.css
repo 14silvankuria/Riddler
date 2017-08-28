@@ -1,4 +1,17 @@
+body{
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#level1{
+  color: white;
+}
+.row{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .jumbotron{
+  color: #454647;
   text-align: center;
   font-style: italic;
   background-image: url("images/riddler_banner.webp");
@@ -10,6 +23,7 @@ float: right;
 }
 #scoreSheet{
   font-size: 13px;
+  color: black;
 }
 #aboutLevel1{
   text-align: center;
@@ -20,7 +34,12 @@ float: right;
 }
 .levelAbout{
   font-weight: bold;
+  font-size: 27px;
 }
+#col-container{
+  height: 700px;
+}
+
 .col-sm-4{
   float: left;
   padding: auto;
@@ -29,7 +48,19 @@ float: right;
 }
 .col-md-8{
   border-right: 1px black solid;
+  font-size: 17px;
+}
+.btn-2{
+  height: 33px;
+  text-align: center;
+  border: 2px solid #F15A29;
 }
 #gameForm{
   padding-top: 100px;
+}
+#score{
+  margin-left: 7px;
+  border-radius: 25px;
+  display: none;
+  background-color: #e8eaed
 }
