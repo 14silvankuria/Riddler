@@ -13,19 +13,19 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container" id="level1">
       <div class="jumbotron" >
         <h1>Riddler</h1>
         <p id="scoreSheet">Your points tally is:
         <span id="firstLevelScore"> </span></p>
       </div>
-      <div class="row">
+      <div class="row" id="col-container">
         <div class="col-md-8">
           <h3 id="aboutLevel1">How it Works</h3>
           <p class="about">Riddler is a three step game that involves chance, cordination-dexterity and quick thinking in the end.<br/>
             It's therefore so named seeing as it ends with a test of wit, where based on the points accumulated, a set of riddles is posed. </p>
           <h3>Instructions:</h3>
-          <p><span class="levelAbout">Level 1:</span>
+          <p><span class="levelAbout">Level 1</span><br><br>
             The first level is all about chance, like a slot machine in a casino where you insert a coin and roll to play.<br>
             Here, you enter a number, any number between 1 and 9 is your 'currency' and then submit to roll/play.<br>
             The site generates three random numbers and displays the in a sequence representing one of the following outcomes:<br>
@@ -34,6 +34,7 @@
               <li><strong>Any two of the numbers match</strong> - This represents half of the possible score</li>
               <li><strong>Different numerical outcome in all three instances</strong> - This only only gets you the bare minimum points of participation, ten points.</li>
             </ul>
+            Once done, proceed to the next level which will have very little to do with luck, if any at all.
             Good Luck!
           </p>
         </div>
@@ -56,9 +57,11 @@
         </div>
 
       </div>
-
+    </div>
+    <div class="container">
       <div id="level-2"></div>
-
+    </div>
+    <div class="container">
     <div id="section3">
       <h1>Welcome to level 3</h1>
           <p>This final level which is mean't to test you on a set of skills which include:<p>
@@ -83,7 +86,7 @@
         <div class="form-group">
           <label for="Q2">Another name</label>
           <input id="Q2" class="form-control" type="text">
-          <button type="submit" class="btn2">Submit</button>
+          <button type="submit" class="btn2"> Submit</button>
         </div>
         <div class="form-group">
           <label for="Q3">sff</label>
