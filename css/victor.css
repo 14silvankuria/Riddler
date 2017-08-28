@@ -50,11 +50,7 @@ float: right;
   border-right: 1px black solid;
   font-size: 17px;
 }
-.btn-2{
-  height: 33px;
-  text-align: center;
-  border: 2px solid #F15A29;
-}
+
 #gameForm{
   padding-top: 100px;
 }
