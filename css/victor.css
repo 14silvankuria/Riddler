@@ -60,3 +60,9 @@ float: right;
   display: none;
   background-color: #e8eaed
 }
+#gameCanvas{
+  border: 1px solid black;
+}
+#hiddenImage{
+  display: none;
+}
