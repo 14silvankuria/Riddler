@@ -63,6 +63,10 @@ float: right;
 #gameCanvas{
   border: 1px solid black;
 }
-#hiddenImage{
+#hiddenImage, #hiddenImage1{
   display: none;
+}
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
 }

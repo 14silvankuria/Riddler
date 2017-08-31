@@ -41,7 +41,7 @@
         <div class="col-md-4" class="testing">
           <form id="gameForm">
             <div class="form-group">
-              <label>Enter any number from 1 to 9</label><br>
+              <label>Enter any number from 0 to 9</label><br>
               <input class="form-control" type="text" id="inputs" required="required" pattern="[0-9]{1}" maxlength="1">
             </div>
             <input type="submit">
@@ -65,9 +65,11 @@
       <p>In level 2...</p>
       <div id="level-2">
         <input id="startGame2" type="button" value="Start Game">
-        <div>
-          <canvas id="gameCanvas" width="800" height="600"></canvas>
-          <scan><img id="hiddenImage" src="css/images/canvas.png"></scan>
+        <div><br>
+          <canvas id="gameCanvas" width="1080" height="650"></canvas>
+          <scan><img id="hiddenImage" src="css/images/canvas.png"></scan><br>
+          <scan><img id="hiddenImage1" src="css/images/fish.gif"></scan><br>
+          <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">MOVE</button>
         </div>
       </div>
     </div>
