@@ -5,11 +5,11 @@
   background-repeat: no-repeat;
 }
 #firstLevelScore, #scoreSheet{
-display: none;
-float: right;
+  display: none;
+  float: right;
 }
 #scoreSheet{
-  font-size: 13px;
+  font-size: 25px;
 }
 #aboutLevel1{
   text-align: center;

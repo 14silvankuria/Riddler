@@ -1,25 +1,34 @@
-$(document).ready(function() {
-  $("#blanks form").submit(function(event) {
-    var Q1Input = $("input#Q1").val();
-    var Q2Input = $("input#Q2").val();
-    var Q3Input = $("input#Q3").val();
-    var Q4Input = $("input#Q4").val();
-    var Q5Input = $("input#Q5").val();
-    var Q6Input = $("input#Q6").val();
-    var Q7Input = $("input#Q7").val();
-    var Q8Input = $("input#Q8").val();
-    var Q9Input = $("input#Q9").val();
+// site preloader --
+$(window).on("load",function(){
+	$('#preloader').fadeOut('slow');
+});
 
-    $(".Q1").text(Q1Input);
-    $(".Q2").text(Q2Input);
-    $(".Q3").text(Q3Input);
-    $(".Q4").text(Q4Input);
-    $(".Q5").text(Q5Input);
-    $(".Q6").text(Q6Input);
-    $(".Q7").text(Q7Input);
-    $(".Q8").text(Q8Input);
-    $(".Q9").text(Q9Input);
+var myTimer = (function(document){
+	var time;
+	function start() {
+		time = setInterval(myClock, 1000 );
+		var T = 300;
+
+		function myCLock {
+			document.getElementById("time").innerHTML = --T;
+			if (T===0 ){
+				clearInterval(time);
+				alert("Your Times Up");
+			}
+		}
+	}
+	function return(){
+		clearInterval(myTimer)
+	}
+})(document);
+
+$(document).ready(function(){
+  $("#range1.riddles1").submit(function(event){
+		var range1 = [Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9];
+
+		$("#answer1").show();
+
 
     event.preventDefault();
-  });
+	});
 });

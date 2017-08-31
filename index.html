@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 
   <head>
     <meta charset="utf-8">
@@ -13,23 +13,24 @@
   </head>
 
   <body>
+    <div id="preloader"></div>
 
     <div id="container">
-      <div class="jumbotron" >
+      <div class="jumbotron">
         <h1>Riddler</h1>
         <p id="scoreSheet">Your points tally is:
-        <span id="firstLevelScore"> </span></p>
+          <span id="firstLevelScore"> </span></p>
       </div>
       <div class="row">
         <div class="col-md-8">
           <h3 id="aboutLevel1">How it Works</h3>
-          <p class="about">Riddler is a three step game that involves chance, cordination-dexterity and quick thinking in the end.<br/>
-            It's therefore so named seeing as it ends with a test of wit, where based on the points accumulated, a set of riddles is posed. </p>
+          <p class="about">Riddler is a three step game that involves chance, cordination-dexterity and quick thinking in the end.
+            <br/> It's therefore so named seeing as it ends with a test of wit, where based on the points accumulated, a set of riddles is posed. </p>
           <h3>Instructions:</h3>
-          <p><span class="levelAbout">Level 1:</span>
-            The first level is all about chance, like a slot machine in a casino where you insert a coin and roll to play.<br>
-            Here, you enter a number, any number between 1 and 9 is your 'currency' and then submit to roll/play.<br>
-            The site generates three random numbers and displays the in a sequence representing one of the following outcomes:<br>
+          <p><span class="levelAbout">Level 1:</span> The first level is all about chance, like a slot machine in a casino where you insert a coin and roll to play.
+            <br> Here, you enter a number, any number between 1 and 9 is your 'currency' and then submit to roll/play.
+            <br> The site generates three random numbers and displays the in a sequence representing one of the following outcomes:
+            <br>
             <ul>
               <li><strong>All three numbers match</strong> - This represents the highest possible score of a hundred points</li>
               <li><strong>Any two of the numbers match</strong> - This represents half of the possible score</li>
@@ -41,11 +42,14 @@
         <div class="col-md-4" class="testing">
           <form id="gameForm">
             <div class="form-group">
-              <label>Enter any number from 1 to 9</label><br>
+              <label>Enter any number from 1 to 9</label>
+              <br>
               <input class="form-control" type="text" id="inputs" required="required" pattern="[0-9]{1}" maxlength="1">
             </div>
             <input type="submit">
-          </form><br><br>
+          </form>
+          <br>
+          <br>
           <div class="row" id="score">
             <div class="col-sm-4" id="userInput1">
             </div>
@@ -60,89 +64,84 @@
 
       <div id="level-2"></div>
 
-    <div id="section3">
-      <h1>Welcome to level 3</h1>
-          <p>This final level which is mean't to test you on a set of skills which include:<p>
+      <div id="section3">
+        <h1>Welcome to level 3</h1>
+        <p>This final level which is mean't to test you on a set of skills which include:
+          <p>
             <ul>
               <li><strong>Speed</strong></li>
               <li><strong>Intelligence</strong></li>
               <li><strong>Apitude</strong></li>
             </ul>
-          <p>This level will be using the score obtained from level 1 to decide which set of 3 riddles you will have
-          have to answer. The 3 riddles will test  you on the skills listed above and hence give you a rating on your
-          performance. To challenge you further this level will be timed. An allocation of 3 minutes to answer the 3
-          questions given.</p>
-          <p> Please submit your answer after each question.</p>
-          <p>Have fun!!!</p>
+            <p>This level will be using the score obtained from level 1 to decide which set of 3 riddles you will have have to answer.
+              <br> The 3 riddles will test you on the skills listed above and hence give you a rating on your performance.
+              <br> To challenge you further this level will be timed. An allocation of 3 minutes to answer the 3 questions given.</p>
+            <p> Please submit your answer after each question.</p>
+            <p>Have fun!!!</p>
       </div>
-      <div class="game3" >
-      <div id="range1">
-      <form>
-        <div class="form-group">
-          <label for="Q1">What can travel around the world while staying in a corner?</label>
-          <!-- answer is a stamp -->
-          <input id="Q1" class="form-control" type="text" required="required">
-          <button type="submit" class="btn1">Submit</button>
-        </div>
-        <div class="form-group">
-          <label for="Q2">I run in and out of town all day and night and yet I never get tired? What am I?</label>
-          <!-- answer is a road -->
-          <input id="Q2" class="form-control" type="text" required="required">
-          <button type="submit" class="btn2">Submit</button>
-        </div>
-        <div class="form-group">
-          <label for="Q3">What 4-letter word can be written forward, backward or upside down, and can still be read from left to right?</label>
-          <!-- answer is noon -->
-          <input id="Q3" class="form-control" type="text" required="required">
-          <button type="submit" class="btn3">Submit</button>
-        </div>
-      </form>
-      </div>
-      <div id="range2">
-        <form>
-          <div class="form-group">
-            <label for="Q4">I am a king who’s good at measuring stuff. What am I?</label>
+      <div class="game3">
+        <button onclick="myTimer.start()" class="col-md-6">Start</button>
+        <div id="timer">Time = <span id="timer"></span></div>
+        <div id="range1">
+          <form class="riddles1">
+            <div class="form-group">
+              <label for="Q1">What can travel around the world while staying in a corner?</label>
+              <!-- answer is a stamp -->
+              <input id="Q1" class="form-control" type="text" required="required" width="auto">
+              <p id="answer1"><strong>Stamp</strong></p>
+            </div>
+            <div class="form-group">
+              <label for="Q2">I run in and out of town all day and night and yet I never get tired? What am I?</label>
+              <!-- answer is a road -->
+              <input id="Q2" class="form-control" type="text" required="required" width="auto">
+              <p id="answer1"><strong>Road</strong></p>
+            </div>
+            <div class="form-group">
+              <label for="Q3">What 4-letter word can be written forward, backward or upside down, and can still be read from left to right?</label>
+              <!-- answer is noon -->
+              <input id="Q3" class="form-control" type="text" required="required" width="auto">
+              <p id="answer1"><strong>Noon</strong></p>
+            </div>
+            <div class="form-group">
+              <label for="Q4">I am a king who’s good at measuring stuff. What am I?</label>
               <!-- answer is ruler -->
-            <input id="Q4" class="form-control" type="text" required="required">
-            <button type="submit" class="btn5">Submit</button>
-          </div>
-          <div class="form-group">
-            <label for="Q5">Which ring is square?</label>
-            <!-- answer is a boxing ring -->
-            <input id="Q5" class="form-control" type="text" required="required">
-            <button type="submit" class="btn5">Submit</button>
-          </div>
-          <div class="form-group">
-            <label for="Q6">When I take five and add six, I get eleven, but when I take six and add seven, I get one. What am I?</label>
-            <!-- answer is a clock -->
-            <input id="Q6" class="form-control" type="text" required="required">
-            <button type="submit" class="btn6">Submit</button>
-          </div>
-        </form>
-        </div>
-        <div id="range3">
-          <form>
+              <input id="Q4" class="form-control" type="text" required="required" width="auto">
+              <p id="answer1"><strong>Stamp</strong></p>
+            </div>
+            <div class="form-group">
+              <label for="Q5">Which ring is square?</label>
+              <!-- answer is a boxing ring -->
+              <input id="Q5" class="form-control" type="text" required="required" width="auto">
+              <p id="answer1"><strong>Boxing-Ring</strong></p>
+            </div>
+            <div class="form-group">
+              <label for="Q6">When I take five and add six, I get eleven, but when I take six and add seven, I get one. What am I?</label>
+              <!-- answer is a clock -->
+              <input id="Q6" class="form-control" type="text" required="required" width="auto">
+              <p id="answer1"><strong>Clock</strong></p>
+            </div>
             <div class="form-group">
               <label for="Q7">What is easy to get into, but hard to get out of?</label>
               <!-- answer is trouble -->
-              <input id="Q7" class="form-control" type="text" required="required">
-              <button type="submit" class="btn7">Submit</button>
+              <input id="Q7" class="form-control" type="text" required="required" width="auto">
+              <p id="answer1"><strong>Trouble</strong></p>
             </div>
             <div class="form-group">
               <label for="Q8">I am not alive but I grow. I don't have lungs but I need air. What am i?</label>
               <!-- answer is fire -->
-              <input id="Q8" class="form-control" type="text" required="required">
-              <button type="submit" class="btn8">Submit</button>
+              <input id="Q8" class="form-control" type="text" required="required" width="auto">
+              <p id="answer1"><strong>Fire</strong></p>
             </div>
             <div class="form-group">
               <label for="Q9">What belongs to you but others use it more than you do?</label>
               <!-- answer is your name -->
-              <input id="Q9" class="form-control" type="text" required="required">
+              <input id="Q9" class="form-control" type="text" required="required" width="auto">
               <button type="submit" class="btn9">Submit</button>
+              <p id="answer1"><strong>My Name</strong></p>
             </div>
-          </div>
           </form>
         </div>
       </div>
   </body>
+
 </html>

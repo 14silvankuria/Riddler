@@ -1,15 +1,59 @@
 body {
-  display:none;
-  background-image: repeating-radial-gradient(
-    circle at 0 0,
-    #eee,
-    /*13992d*/
-    #ccc 50px
-    );
+background: -webkit-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+background: -o-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+background: linear-gradient(to right, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
 }
 #section3 {
   text-align: center;
 }
 ul {
   list-style-position: inside;
+}
+
+.no-js #loader{
+  display: none;
+}
+
+.js #loader{
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z - index: 999;
+  width: 100 % ;
+  height: 100 % ;
+  background: #333 url('images/Preloader.gif') no-repeat center;
+  }
+
+#Q1,#Q2,#Q3,#Q4,#Q5,#Q6,#Q5,#Q6,#Q7,#Q8 {
+  text-align: center;
+}
+
+#answer1{
+  text-align: center;
+  color: #5DCB14;
+  display: none;
+}
+
+.riddles1{
+  text-align: center;
+}
+
+#game3{
+  padding-bottom: 12px;
+}
+
+#timer{
+background: -webkit-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+background: -o-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+background: linear-gradient(to right, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+  font-size:20px;
+  text-align:center;
 }
